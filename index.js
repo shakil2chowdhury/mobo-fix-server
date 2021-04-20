@@ -113,6 +113,6 @@ app.get('/', (req, res) => {
   res.send('Welcome')
 })
 
-app.listen(port, () => {
+app.listen(port || process.env.PORT, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
